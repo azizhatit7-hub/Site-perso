@@ -1,3 +1,4 @@
+/* Mon site CV - etape 2 */
 
 body {
     font-family: Arial;
@@ -16,7 +17,7 @@ h2 {
     color: darkblue;
 }
 
-
+/* menu */
 nav ul {
     list-style: none;
     background-color: navy;
@@ -49,10 +50,10 @@ section {
     background-color: white;
     padding: 1em;
     margin-bottom: 1em;
-    box-shadow: 0 2px 5px grey; 
+    box-shadow: 0 2px 5px grey; /* propriete non vue en cours (MDN) */
 }
 
-
+/* pied de page */
 footer {
     background-color: darkblue;
     color: white;
@@ -64,12 +65,12 @@ footer a {
     color: white;
 }
 
-
+/* selecteur non vu en cours (MDN) : liens qui commencent par mailto */
 a[href^="mailto"] {
     text-decoration: underline;
 }
 
-
+/* petits ecrans */
 @media (max-width: 600px) {
     nav li {
         display: block;
