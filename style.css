@@ -2,15 +2,15 @@
 
 body {
     font-family: arial;
-    color: white;
+    color: blue ;
     background-color: lightblue;
 
 }
 
 header {
-    background-color: navy
-    color: white 
-    text-align : center 
+    background-color: navy;
+    color: white;
+    text-align : center ;
 }
 
 nav ul {
