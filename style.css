@@ -1,20 +1,143 @@
+/* Étape 2 - mise en forme du site CV (CSS + responsive) */
+
 body {
     font-family: Arial;
-    color: black;
-    background-color: white;
+    color: #222222;
+    background-color: #f4f6f8;
+    margin: 0;
 }
 
 header {
     background-color: darkblue;
     color: white;
     text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+nav {
+    background-color: navy;
 }
 
 nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-nav li {
+nav a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Sélecteur non vu en cours : la pseudo-classe :hover (MDN) */
+nav a:hover {
+    background-color: teal;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: darkblue;
+}
+
+h3 {
+    color: teal;
 }
 
 img {
+    max-width: 100%;
+    height: auto;
 }
+
+/* Propriété non vue en cours : box-shadow (MDN) */
+section {
+    box-shadow: 0 2px 6px grey;
+}
+
+figure {
+    margin: 0 0 20px 0;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px 12px;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+
+hr {
+    display: none;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: white;
+}
+
+/* Responsive : écrans de téléphone */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+}
+
+@media print {
+    nav, footer {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    section {
+        box-shadow: none;
+    }
+}
+
