@@ -127,6 +127,7 @@ footer a {
     }
 }
 
+/* Impression / export PDF du CV */
 @media print {
     nav, footer {
         display: none;
@@ -140,4 +141,3 @@ footer a {
         box-shadow: none;
     }
 }
-
