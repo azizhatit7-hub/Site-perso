@@ -1,16 +1,13 @@
-/* Étape 2 - mise en forme du site (à compléter) */
-
 body {
-    font-family: arial;
-    color: blue ;
-    background-color: blue;
-
+    font-family: Arial;
+    color: black;
+    background-color: white;
 }
 
 header {
-    background-color: navy;
-    color: blue ;
-    text-align : center ;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
 }
 
 nav ul {
