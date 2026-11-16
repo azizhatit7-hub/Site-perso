@@ -1,6 +1,10 @@
 /* Étape 2 - mise en forme du site (à compléter) */
 
 body {
+    font-family: Verdana;
+    color: black;
+    background-color: lightgrey;
+
 }
 
 header {
