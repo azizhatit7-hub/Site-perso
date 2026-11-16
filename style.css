@@ -1,6 +1,3 @@
-/* Etape 2 - mise en forme du site CV */
-
-/* --- Page et textes (CM4) --- */
 body {
     font-family: Arial, sans-serif;
     color: black;
@@ -16,7 +13,7 @@ h3 {
     color: teal;
 }
 
-/* --- En-tete --- */
+
 header {
     background-color: darkblue;
     color: white;
@@ -28,7 +25,7 @@ header h1 {
     text-transform: uppercase;
 }
 
-/* --- Menu (CM4 : list-style, hover / CM5 : display inline-block, padding) --- */
+
 nav ul {
     list-style-type: none;
     background-color: navy;
@@ -52,7 +49,7 @@ nav a:hover {
     background-color: teal;
 }
 
-/* --- Contenu (CM5 : modele de boite, centrer avec margin auto) --- */
+
 main {
     width: 90%;
     margin: 1em auto;
@@ -65,20 +62,11 @@ section {
     border: 1px solid grey;
 }
 
-img {
-    max-width: 100%;
-}
-
-table {
-    border-collapse: collapse;
-}
-
 th {
     background-color: darkblue;
     color: white;
 }
 
-/* --- Pied de page --- */
 footer {
     background-color: darkblue;
     color: white;
@@ -88,21 +76,4 @@ footer {
 
 footer a {
     color: white;
-}
-
-/* --- Selecteur non vu en cours : une section sur deux (MDN :nth-child) --- */
-section:nth-child(even) {
-    background-color: lightyellow;
-}
-
-/* --- Propriete non vue en cours : box-shadow (MDN) --- */
-section {
-    box-shadow: 0 2px 5px grey;
-}
-
-/* --- Responsive : petits ecrans (non vu en cours) --- */
-@media (max-width: 600px) {
-    nav li {
-        display: block;
-    }
 }
