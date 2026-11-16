@@ -1,18 +1,9 @@
+
 body {
-    font-family: Arial, sans-serif;
-    color: black;
+    font-family: Arial;
     background-color: lightgrey;
     margin: 0;
 }
-
-h2 {
-    color: darkblue;
-}
-
-h3 {
-    color: teal;
-}
-
 
 header {
     background-color: darkblue;
@@ -21,17 +12,17 @@ header {
     padding: 1em;
 }
 
-header h1 {
-    text-transform: uppercase;
+h2 {
+    color: darkblue;
 }
 
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     background-color: navy;
+    text-align: center;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 nav li {
@@ -42,14 +33,13 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 1em;
-    display: block;
 }
 
 nav a:hover {
     background-color: teal;
 }
 
-
+/* contenu */
 main {
     width: 90%;
     margin: 1em auto;
@@ -57,13 +47,11 @@ main {
 
 section {
     background-color: white;
-
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 5px grey; 
 }
 
-th {
-    background-color: darkblue;
-    color: white;
-}
 
 footer {
     background-color: darkblue;
@@ -74,4 +62,19 @@ footer {
 
 footer a {
     color: white;
+}
+
+
+a[href^="mailto"] {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+    nav li {
+        display: block;
+    }
+    img {
+        width: 100%;
+    }
 }
