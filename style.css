@@ -1,6 +1,7 @@
+/* Mon site CV - etape 2 */
 
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background-color: lightgrey;
     margin: 0;
 }
@@ -16,7 +17,7 @@ h2 {
     color: darkblue;
 }
 
-
+/* menu */
 nav ul {
     list-style: none;
     background-color: navy;
@@ -39,19 +40,20 @@ nav a:hover {
     background-color: teal;
 }
 
-
-main {
-    width: 90%;
-    margin: 1em auto;
-}
-
+/* contenu */
 section {
     background-color: white;
+    width: 90%;
+    margin: 1em auto;
     padding: 1em;
-    margin-bottom: 1em;
-    box-shadow: 0 2px 5px grey; 
+    box-shadow: 0 2px 5px grey; /* propriete non vue en cours (MDN) */
 }
 
+section img {
+    width: 40%;
+}
+
+/* pied de page */
 footer {
     background-color: darkblue;
     color: white;
@@ -63,16 +65,30 @@ footer a {
     color: white;
 }
 
-
+/* selecteur non vu en cours (MDN) : liens qui commencent par mailto */
 a[href^="mailto"] {
     text-decoration: underline;
 }
 
+/* petits ecrans */
 @media (max-width: 600px) {
     nav li {
         display: block;
     }
-    img {
+    section img {
         width: 100%;
+    }
+}
+
+/* impression / export du CV en PDF (non vu en cours) */
+@media print {
+    nav, footer {
+        display: none;
+    }
+    body {
+        background-color: white;
+    }
+    section {
+        box-shadow: none;
     }
 }
